@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meus Repositórios do GitHub</title>
+</head>
+<body>
+    <h1>Meus Repositórios do GitHub</h1>
+    <ul>
+        {% for repo in repos %}
+            <li><a target="_blank" href="{{ repo.html_url }}">{{ repo.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
